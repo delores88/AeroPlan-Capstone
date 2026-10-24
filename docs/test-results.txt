@@ -1,0 +1,53 @@
+test_all_forecasts_are_causal (test_aeroplan.ForecastTests.test_all_forecasts_are_causal) ... ok
+test_future_nonnegative (test_aeroplan.ForecastTests.test_future_nonnegative) ... ok
+test_naive_and_ma8 (test_aeroplan.ForecastTests.test_naive_and_ma8) ... ok
+test_output_includes_next_step (test_aeroplan.ForecastTests.test_output_includes_next_step) ... ok
+test_seasonal_fallback (test_aeroplan.ForecastTests.test_seasonal_fallback) ... ok
+test_seasonal_naive (test_aeroplan.ForecastTests.test_seasonal_naive) ... ok
+test_segments (test_aeroplan.ForecastTests.test_segments) ... ok
+test_signed_metrics (test_aeroplan.ForecastTests.test_signed_metrics) ... ok
+test_tsb_decay (test_aeroplan.ForecastTests.test_tsb_decay) ... ok
+test_zero_demand_metrics (test_aeroplan.ForecastTests.test_zero_demand_metrics) ... ok
+test_data_page (test_aeroplan.HTTPTests.test_data_page) ... ok
+test_foreign_origin_blocked (test_aeroplan.HTTPTests.test_foreign_origin_blocked) ... ok
+test_health (test_aeroplan.HTTPTests.test_health) ... ok
+test_host_rebinding_blocked (test_aeroplan.HTTPTests.test_host_rebinding_blocked) ... ok
+test_no_arbitrary_static_path (test_aeroplan.HTTPTests.test_no_arbitrary_static_path) ... ok
+test_notes_and_methodology (test_aeroplan.HTTPTests.test_notes_and_methodology) ... ok
+test_post_without_token_blocked (test_aeroplan.HTTPTests.test_post_without_token_blocked) ... ok
+test_dates_and_week (test_aeroplan.ImportTests.test_dates_and_week) ... ok
+test_duplicate_headers_rejected (test_aeroplan.ImportTests.test_duplicate_headers_rejected) ... ok
+test_duplicate_reject_preserves_active (test_aeroplan.ImportTests.test_duplicate_reject_preserves_active) ... ok
+test_immutable_versions (test_aeroplan.ImportTests.test_immutable_versions) ... ok
+test_import_optional_tables_absent (test_aeroplan.ImportTests.test_import_optional_tables_absent) ... ok
+test_invalid_dates (test_aeroplan.ImportTests.test_invalid_dates) ... ok
+test_invalid_zip (test_aeroplan.ImportTests.test_invalid_zip) ... ok
+test_lead_weeks_converted (test_aeroplan.ImportTests.test_lead_weeks_converted) ... ok
+test_negative_demand_rejected (test_aeroplan.ImportTests.test_negative_demand_rejected) ... ok
+test_number_checks (test_aeroplan.ImportTests.test_number_checks) ... ok
+test_orphan_rejected (test_aeroplan.ImportTests.test_orphan_rejected) ... ok
+test_semicolon_utf8_bom (test_aeroplan.ImportTests.test_semicolon_utf8_bom) ... ok
+test_zip_paths_not_extracted (test_aeroplan.ImportTests.test_zip_paths_not_extracted) ... ok
+test_cancellation (test_aeroplan.IntegratedTests.test_cancellation) ... ok
+test_csv_formula_safety (test_aeroplan.IntegratedTests.test_csv_formula_safety) ... ok
+test_demo_provenance_forced (test_aeroplan.IntegratedTests.test_demo_provenance_forced) ... ok
+test_evidence_export_and_hashes (test_aeroplan.IntegratedTests.test_evidence_export_and_hashes) ... ok
+test_heldout_demand_cannot_select_models_or_buffers (test_aeroplan.IntegratedTests.test_heldout_demand_cannot_select_models_or_buffers) ... ok
+test_html_offline_and_escaped_notes (test_aeroplan.IntegratedTests.test_html_offline_and_escaped_notes) ... ok
+test_import_export_reproduction (test_aeroplan.IntegratedTests.test_import_export_reproduction) ... ok
+test_infeasible_targets_remain_visible (test_aeroplan.IntegratedTests.test_infeasible_targets_remain_visible) ... ok
+test_missing_weeks_excluded (test_aeroplan.IntegratedTests.test_missing_weeks_excluded) ... ok
+test_pdf_structure_and_demo_marking (test_aeroplan.IntegratedTests.test_pdf_structure_and_demo_marking) ... ok
+test_repeatable_calculations (test_aeroplan.IntegratedTests.test_repeatable_calculations) ... ok
+test_configuration_boundaries (test_aeroplan.PolicyTests.test_configuration_boundaries) ... ok
+test_insufficient_pos_fallback (test_aeroplan.PolicyTests.test_insufficient_pos_fallback) ... ok
+test_late_backlog_not_immediate_fill (test_aeroplan.PolicyTests.test_late_backlog_not_immediate_fill) ... ok
+test_lead_distribution_excludes_future_receipts (test_aeroplan.PolicyTests.test_lead_distribution_excludes_future_receipts) ... ok
+test_receipt_timing_and_conservation (test_aeroplan.PolicyTests.test_receipt_timing_and_conservation) ... ok
+test_score_window_counts_only_test_orders (test_aeroplan.PolicyTests.test_score_window_counts_only_test_orders) ... ok
+test_target_increases_with_buffer (test_aeroplan.PolicyTests.test_target_increases_with_buffer) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 2.874s
+
+OK

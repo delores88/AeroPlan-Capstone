@@ -1,0 +1,29 @@
+# AeroPlan local Windows launcher. Reuses a compatible installed Python.
+$ErrorActionPreference = 'Stop'
+try {
+    $aeroRoot = if ($env:AEROPLAN_ROOT) { $env:AEROPLAN_ROOT } else { (Get-Location).Path }
+    $aeroRoot = [IO.Path]::GetFullPath($aeroRoot)
+    Set-Location -LiteralPath $aeroRoot
+    $aeroProbe = 'import sys,sqlite3,numpy,scipy; sys.exit(0 if sys.version_info >= (3,10) else 1)'
+    $aeroPython = $null
+    $aeroPrefix = @()
+    $aeroCandidates = @((Join-Path $aeroRoot '.venv\Scripts\python.exe'),'python.exe','python3.exe','py.exe')
+    foreach ($aeroCandidate in $aeroCandidates) {
+        $aeroFound = Get-Command $aeroCandidate -ErrorAction SilentlyContinue
+        if (-not $aeroFound -or $aeroFound.Source -like '*\Microsoft\WindowsApps\*') { continue }
+        $aeroArgs = if ($aeroCandidate -eq 'py.exe') { @('-3') } else { @() }
+        try {
+            & $aeroFound.Source @aeroArgs -c $aeroProbe 2>$null
+            if ($LASTEXITCODE -eq 0) { $aeroPython=$aeroFound.Source; $aeroPrefix=$aeroArgs; break }
+        } catch { }
+    }
+    if (-not $aeroPython) {
+        throw 'Python 3.10+ with NumPy and SciPy is required. See README.md for isolated environment setup.'
+    }
+    Write-Host 'AeroPlan: keep this window open while the app is running.'
+    & $aeroPython @aeroPrefix (Join-Path $aeroRoot 'launch.py')
+    if ($LASTEXITCODE -ne 0) { throw 'AeroPlan could not start. Check the message above or workspace-v22\aeroplan.log.' }
+} catch {
+    Write-Host $_.Exception.Message -ForegroundColor Red
+    exit 1
+}

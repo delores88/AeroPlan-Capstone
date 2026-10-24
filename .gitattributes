@@ -1,0 +1,2 @@
+# Preserve exact file bytes so SHA256SUMS.txt also verifies after a clone.
+* -text

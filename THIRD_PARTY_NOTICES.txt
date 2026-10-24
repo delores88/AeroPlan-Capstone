@@ -1,0 +1,10 @@
+The application and independent demonstration are newly authored, MIT-licensed materials.
+No employer/client source files, records, configurations, credentials, or fonts are redistributed.
+
+Python runtime: not bundled. Install Python 3.12 from https://www.python.org/downloads/ and create a dedicated virtual environment as described in README.md. Python is distributed under the Python Software Foundation license. No Python environment or dependency binaries are included in this repository. The pinned NumPy and SciPy packages retain their respective licenses when installed.
+
+Bundled publisher dataset: Aerospace Supply Chain Performance & Forecasting, Roberto Carlos Tientcheu, Kaggle, Version 1 (2026). The publisher identifies the data as synthetic and MIT licensed. The original archive is bundled as data/aerospace-v1.zip and is also preserved inside the frozen replay exports. Its SHA-256 is 844ba09645c33a09dbb2be28b9a8f560815ef38929ddcc818b33ecc3df2d8168. Source attribution and the MIT permission notice are retained in data/DATA_LICENSE.txt.
+https://www.kaggle.com/datasets/robertocarlost/aerospace-supply-chain-performance-and-forecasting
+
+Methodological reference: Hyndman & Athanasopoulos, Forecasting: Principles and Practice, 3rd ed., OTexts (2021). Referenced, not redistributed.
+https://otexts.com/fpp3/

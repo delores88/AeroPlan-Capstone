@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "screen": "overview",
+      "h1": [
+        "From demand to better inventory decisions."
+      ],
+      "overflow": false
+    },
+    {
+      "screen": "data",
+      "h1": [
+        "Give the research a reliable foundation."
+      ],
+      "overflow": false
+    },
+    {
+      "screen": "forecasts",
+      "h1": [
+        "A forecast you can inspect and defend."
+      ],
+      "overflow": false
+    },
+    {
+      "screen": "policies",
+      "h1": [
+        "Make the service\u2013inventory trade-off explicit."
+      ],
+      "overflow": false
+    },
+    {
+      "screen": "history",
+      "h1": [
+        "Keep the experiment, not just the screenshot."
+      ],
+      "overflow": false
+    },
+    {
+      "screen": "export",
+      "h1": [
+        "Your research, ready to review."
+      ],
+      "overflow": false
+    },
+    {
+      "screen": "method",
+      "h1": [
+        "Make every assumption inspectable."
+      ],
+      "overflow": false
+    },
+    {
+      "forecast_controls": "passed"
+    },
+    {
+      "decision_filter": "passed"
+    },
+    {
+      "export_link_and_http_export": "passed"
+    },
+    {
+      "new_experiment": "passed"
+    },
+    {
+      "comparison_scope_warning": "passed"
+    },
+    {
+      "table_pagination": "passed"
+    },
+    {
+      "browser_import_demo": "passed"
+    },
+    {
+      "mobile_overflow": false
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "mode": "Chromium render with same app JavaScript; Python-to-loopback API bridge because environment policy blocks all browser navigation; native browser download not tested"
+}
